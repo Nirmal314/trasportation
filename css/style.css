@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Background image*/
+
+body {
+    background-image: url("../Images/Bg_Image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Top navbar*/
+
+/*Main*/
+
+#navbar {
+    background-color: rgb(46, 46, 46);
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+/*Phone navigation - Turns on on width = var*/
+
+.navigation {
+    display: none;
+}
+
+/*Logo banner*/
+
+#logo {
+    background-color: aliceblue;
+}
+
+/*Navbar items*/
+
+#navbar ul li a {
+    display: inline-block;
+    font-weight: 300;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 5px 15px;
+}
+
+/*Underline transition*/
+
+#navbar ul li a::after {
+    content: "";
+    display: block;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+    border-bottom: 2px solid rgb(255, 104, 44);
+}
+
+/*While hovering*/
+
+#navbar ul li a:hover:after {
+    transform: scaleX(0.5);
+}
+
+/*Unlisted items*/
+
+#navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*Decoration of text*/
+
+#navbar ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Home*/
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+    margin-top: -107px;
+}
+
+/*Home text*/
+
+.home p {
+    font-size: 4rem;
+    font-weight: 900;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, transparent 25%, #0A5997 25%, #0A5997 50%, #0A5997 50%, #0A5997 75%, transparent 75%) 5;
+    bottom: 0;
+}
+
+/*Info*/
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*Info text*/
+
+.info p {
+    font-size: 2.5rem;
+    font-weight: 200;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, transparent 25%, #0A5997 25%, #0A5997 50%, #0A5997 50%, #0A5997 75%, transparent 75%) 5;
+}
+
+/*Text under info*/
+
+.line {
+    text-align: center;
+    color: rgb(99, 99, 99);
+}
+
+/*Message image containor*/
+
+#msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Message image size*/
+
+#msg img {
+    height: 70vh;
+}
+
+/*Main containor for 4 squares*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Row 1 and 2*/
+
+.mainImg1, .mainImg2 {
+    display: flex;
+}
+
+/*4 Image inside the area*/
+
+.img_t {
+    height: 50vh;
+    transition: transform .3s ease;
+}
+
+/*Zoom while hovering*/
+
+.img_t:hover {
+    transform: scale(1.1);
+}
+
+/*Cursor*/
+
+.ql li {
+    cursor: pointer;
+}
+
+/*Opacity while hovering*/
+
+.ql li:hover {
+    opacity: .5;
+}
+
+/*Containor for IAS image*/
+
+.kaka {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*IAS image*/
+
+.kaka img {
+    height: 25vh;
+    margin-right: 45px;
+    margin-top: 30px;
+}
+
+/*Text after image*/
+
+.kaka::after {
+    content: 'Shri Udit Agrawal (IAS) \a Chairman & Managing Director \a RRL & Municipal \a Commissioner RMC'attr(title);
+    white-space: pre-line;
+}
+
+/*Containor for scroll up button*/
+
+.button_flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+/*Scroll up button*/
+
+#myBtn {
+    height: -1px;
+    width: 80px;
+    background: #2e2e2e;
+    font-size: 2.7rem;
+    color: white;
+    border-radius: 25% 25% 0 0;
+    outline: none;
+    border: none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    cursor: pointer;
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgb(46, 46, 46);
+}
+
+/*Row*/
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 20px 15px;
+    overflow: hidden;
+}
+/*Textr in UL of footer*/
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/*Quick links*/
+
+.ql {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: -60px;
+}
+
+/*List items in quick links*/
+
+.ql li {
+    font-size: .9rem;
+}
+
+/*A horizontal row*/
+
+hr {
+    margin-bottom: 20px;
+}
+
+/*Copyrights line*/
+
+.cpy {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: .9rem;
+    padding-bottom: 20px;
+}
+
+/*All good*/
+
+@media only screen and (max-width:1044px) {
+    #logo {
+        display: none;
+    }
+    .home {
+        margin-top: 22px;
+        margin-bottom: 20px;
+    }
+    #msg img {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width:774px) {
+    .mainImg1, .mainImg2 {
+        flex-direction: column;
+    }
+    #myBtn {
+        font-size: 1.7rem;
+        width: 60px;
+    }
+}

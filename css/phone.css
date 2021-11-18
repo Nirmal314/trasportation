@@ -1,0 +1,161 @@
+#navbar ul li a {
+    display: none;
+}
+
+#navbar {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#navbar ul {
+    display: none;
+}
+
+.home p {
+    font-size: 3rem;
+}
+
+.info p {
+    font-size: 1.5rem;
+}
+
+.line p {
+    font-size: .75rem;
+}
+
+#msg img {
+    height: 30vh;
+}
+
+.kaka img {
+    height: 15vh;
+}
+
+.kaka::after {
+    font-size: .8rem;
+}
+
+.img_t {
+    height: 30vh;
+    transition: transform .3s ease;
+    -webkit-transition: transform .3s ease;
+    -moz-transition: transform .3s ease;
+    -ms-transition: transform .3s ease;
+    -o-transition: transform .3s ease;
+}
+
+.img_t:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/* .kaka {
+    margin-top: 280px;
+} */
+
+/*****************************************/
+
+.navigation {
+    display: flex;
+    background-color: rgb(46, 46, 46);
+    /* padding-top: 12px;
+    padding-bottom: 12px; */
+}
+
+#menu {
+    width: 35px;
+    height: 20px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    /* z-index: 100; */
+}
+
+.bar {
+    height: 3.5px;
+    width: 80%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    display: none;
+}
+
+.nav li a:hover {
+    opacity: .5;
+}
+
+.nav li {
+    list-style: none;
+    padding: 18px 0;
+    margin-left: 20px;
+    border-bottom: 1px solid rgb(104, 104, 104);
+}
+
+.icon .bar {
+    background-color: white;
+}
+
+.icon #bar1 {
+    transform: translateY(2px) rotate(-45deg);
+}
+
+.icon #bar3 {
+    transform: translateY(-4px) rotate(45deg);
+}
+
+.icon #bar2 {
+    transform: translateX(-50px);
+}
+
+.change {
+    background-color: #2e2e2e;
+    margin: 0;
+    position: absolute;
+    font-size: .8rem;
+    width: 100%;
+    display: inline;
+    transition: all .5s ease-out;
+}
+
+#nav {
+    margin-top: 70px;
+}
+
+#Ftr {
+    font-size: .7rem;
+}
+
+#Ftr .ql li a{
+    font-size: .5rem;
+    margin-left: 20px;
+}
+
+.cpy {
+    font-size: .6rem;
+}
+
+#myBtn {
+    font-size: 2.0rem;
+    width: 60px;
+}
